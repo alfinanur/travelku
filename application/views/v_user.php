@@ -5,8 +5,9 @@
 </head>
 <body>
 	<center>
-		<form action="http://localhost/CodeIgniter-3.1.7/index.php/user/add" method="POST">
+		<form method="POST" action="<?php echo base_url()."index.php/user/do_insert"; ?>">
 		<table>
+		ID :<input name="Id_user" value=""><br/>
 		Username :<input name="username" value=""><br/>
 		Password :<input name="password" type="password" value=""><br/>
 		Fullname :<input name="fullname" value=""><br/>
